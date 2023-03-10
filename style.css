@@ -1,0 +1,45 @@
+body{
+    overflow-x: hidden;
+}
+
+.app_bar{
+    position: absolute;
+    top:0; 
+    left:0;
+
+    width: 100vw;
+
+
+    border-bottom: 1px solid grey;
+    
+}
+.app_bar_inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 20px 10px 20px;
+}
+
+.app_bar_right{
+    display: flex;
+    align-items: center;
+}
+.app_bar_right .phone{
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+    margin-right: 23px;
+}
+.app_bar_right .china{
+    writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.app_bar_right .call_back{
+    padding: 1px 52px;
+    background-color: #2D2F33;
+    color: white;
+}
+
