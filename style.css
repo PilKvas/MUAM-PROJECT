@@ -1,9 +1,20 @@
-body{
-    overflow-x: hidden;
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+ /* AppBar */
+
 .app_bar{
-    position: absolute;
+    position:relative;
     top:0; 
     left:0;
 
@@ -31,15 +42,92 @@ body{
     align-items: center;
     margin-left: 26px;
     margin-right: 23px;
+    cursor: pointer;
 }
 .app_bar_right .china{
     writing-mode: vertical-rl;
   text-orientation: upright;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
+.app_bar_right .english{
+    cursor: pointer;
+}
 .app_bar_right .call_back{
-    padding: 1px 52px;
+    padding: 5px 52px;
     background-color: #2D2F33;
     color: white;
+    cursor: pointer;
 }
 
+/* ---------------------------------------------------- */
+
+/* Navigation */
+
+.navigation_inner{
+    margin: 18px 23px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation_inner a{
+    text-decoration: none;
+    color: #17181A;
+    font-size: 14px;
+    font-weight: 400;
+    transition: ease 0.2s;
+}
+.navigation_inner .selected{
+    text-decoration: none;
+    color:#EB4230;
+}
+.navigation_inner a:hover{
+    color:#EB4230;
+}
+li {
+    display: inline-block;
+
+}
+
+.navigation_inner ul li {
+    margin-left: 29px;
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------- */
+
+
+/* ListTile */
+
+
+.list_title_inner {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.image_middle{
+    width: 27rem;
+    height: 27rem;
+}
+
+/* ---------------------------------------------------- */
+
+
+/* Logo */
+
+.logo_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 108px;
+}
+
+
+
+
+
+/* ---------------------------------------------------- */
