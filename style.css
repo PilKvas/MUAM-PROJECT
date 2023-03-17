@@ -1,4 +1,6 @@
-*
+*,
+::before,
+::after
 {
     margin: 0;
     padding: 0;
@@ -131,3 +133,32 @@ li {
 
 
 /* ---------------------------------------------------- */
+
+
+/* Slider */
+
+
+.wrapper{
+    width: 1400px;
+    margin: 0 auto;
+}
+.slider-container {
+    overflow: hidden;
+    background-color: pink;
+    }
+ .slider-track{
+    display: flex;
+    background-color: yellow;
+    transition: 0.2s;
+ }
+.slider-item {
+    height: 500px;
+}
+.slider-item:nth-child(3n + 1){background-color: red;}
+.slider-item:nth-child(3n + 2){background-color:    green;}
+.slider-item:nth-child(3n + 3){background-color: blue;}
+
+.slider-buttons {
+    text-align: center;
+}
+
