@@ -158,7 +158,7 @@ li {
 
 .slider-track {
     display: flex;
-    transition: 0.5s;
+    transition: 0.5s ease ;
 }
 
 .slider-item {
@@ -254,7 +254,7 @@ li {
     margin: 0 auto;
 }
 
-.info .btn_row .how_to_join {
+.btn_row .how_to_join {
     padding: 4px 52px;
     background: #17181A;
     text-decoration: none;
@@ -267,7 +267,7 @@ li {
     text-transform: uppercase;
 }
 
-.info .btn_row .days {
+.btn_row .days {
     padding: 4px 52px;
     background: #F0F0F0;
     text-decoration: none;
@@ -314,3 +314,51 @@ li {
 
 /* ---------------------------------------------------- */
 
+/* Direction */
+
+.direction_inner{
+    margin: 160px 160px 0px 160px;
+}
+
+.direction h1{
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.direction .direction_inner ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.direction .direction_inner ul li{
+    border-top: 2px solid #17181A;
+    padding: 10px;
+}
+.direction .direction_inner ul li a{
+    text-decoration: none;
+    font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+
+text-transform: uppercase;
+
+color: #17181A;
+transition: 0.5 ease;
+}
+.direction .direction_inner ul li a:hover{
+    color: #0050CF;
+}
+.direction .direction_inner ul li:last-child{
+    border-top: 2px solid #17181A;
+    border-bottom: 2px solid #17181A;
+}
+
+.direction .btn_row{
+    display: flex;
+    align-items: center;
+
+    margin: 100px 160px 160px 160px;
+}
