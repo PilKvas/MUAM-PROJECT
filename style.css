@@ -13,6 +13,32 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.btn-up {
+    position: fixed;
+    background-color: #F0F0F0;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 42px;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+}
+
+.btn-up::before {
+    content: "";
+    text-align: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    top: 22px;
+    background-repeat: no-repeat;
+    background-image: url("assets/pointer.png");
+}
+
+.btn-up_hide {
+    display: none;
+}
 
 /* AppBar */
 
@@ -261,7 +287,7 @@ li {
     margin: 0 auto;
 }
 
- .how_to_join {
+.how_to_join {
     padding: 4px 52px;
     background: #17181A;
     text-decoration: none;
@@ -319,6 +345,20 @@ li {
 .youtube a:hover {
     background:
         #c4302b;
+    color:
+        #fff;
+}
+
+.whatsapp a:hover {
+    background:
+        #50b154;
+    color:
+        #fff;
+}
+
+.instagram a:hover {
+    background:
+        purple;
     color:
         #fff;
 }
@@ -621,7 +661,7 @@ li {
 }
 
 
-.about .about_inner .about_text{
+.about .about_inner .about_text {
     padding: 100px;
 }
 
@@ -634,6 +674,103 @@ li {
     color: #17181A;
 }
 
-.about .about_inner .btn_row{
+.about .about_inner .btn_row {
     margin-top: 40px;
+}
+
+/* ---------------------------------------------------- */
+
+
+/* Footer */
+
+
+.footer {
+    background-color: #17181A;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 70px 160px 20px 160px;
+}
+
+.footer {
+    padding: 70px 160px 20px 160px;
+}
+
+.footer .logo_container {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.footer .logo_container .logo_white p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+
+    padding: 20px 0px 30px 0px;
+}
+
+.footer .logo_container .logo_button .button {
+    padding: 20px 100px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer .logo_container .logo_button .block_text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+
+    margin-top: 30px;
+}
+
+
+.contact_box {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.contact_box_inner .header {
+    padding: 40px 0 20px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height, or 146% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.numbers_box {
+    padding: 20px 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers_text {
+    padding-right: 150px;
+    padding-bottom: 30px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:rgba(255, 255, 255, 0.5);
+}
+.social_bar{
+    display: flex;
 }
