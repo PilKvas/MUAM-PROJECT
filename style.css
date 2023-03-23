@@ -261,7 +261,7 @@ li {
     margin: 0 auto;
 }
 
-.btn_row .how_to_join {
+ .how_to_join {
     padding: 4px 52px;
     background: #17181A;
     text-decoration: none;
@@ -274,7 +274,7 @@ li {
     text-transform: uppercase;
 }
 
-.btn_row .days {
+.days {
     padding: 4px 52px;
     background: #F0F0F0;
     text-decoration: none;
@@ -518,7 +518,7 @@ li {
 .source .source_inner_first_line .source_inner_first_line_element {
     width: 33%;
     padding-left: 20px;
-
+    margin-bottom: 60px;
 }
 
 .source .source_inner_first_line .source_inner_first_line_element:first-child {
@@ -552,8 +552,88 @@ li {
 }
 
 .source .more {
+    margin-top: 30px;
     padding: 40px 70px;
     background-color: #000000;
     color: white;
     display: inline-block;
+}
+
+/* ---------------------------------------------------- */
+
+
+/* About */
+
+
+.about {
+    margin: 70px 160px 20px 160px;
+}
+
+
+.about .about_inner .about_header h1 {
+    font-weight: 400;
+    font-size: 95px;
+    line-height: 96px;
+    text-transform: uppercase;
+
+
+    color: #17181A;
+
+    margin-bottom: 30px;
+}
+
+.about .about_inner .about_content {
+    display: flex;
+}
+
+.about .about_inner .about_content .about_element {
+    border-top: solid 2px #000000;
+    margin-left: 20px;
+
+}
+
+.about .about_inner .about_content .about_element:first-child {
+    border-top: solid 2px #000000;
+    margin-left: 0px;
+
+}
+
+.about .about_inner .about_content .about_element h2 {
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 84px;
+
+    letter-spacing: 1px;
+
+    color: #17181A;
+
+    margin-top: 20px;
+
+}
+
+.about .about_inner .about_content .about_element p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+
+    color: #17181A;
+
+}
+
+
+.about .about_inner .about_text{
+    padding: 100px;
+}
+
+.about .about_inner .about_text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+
+
+    color: #17181A;
+}
+
+.about .about_inner .btn_row{
+    margin-top: 40px;
 }
