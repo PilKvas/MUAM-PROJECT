@@ -778,6 +778,16 @@ li {
         justify-content: space-between;
     }
 
+    .app_bar_inner .app_bar_logo img{
+        width: 200px;
+    }
+    .app_bar_right .call_back {
+        padding: 5px 32px;
+        font-size: 10px;
+        background-color: #2D2F33;
+        color: white;
+        cursor: pointer;
+    }
     .english{
         display: none;
     }
