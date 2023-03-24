@@ -15,6 +15,7 @@ body {
 
 .btn-up {
     position: fixed;
+    z-index: 1;
     background-color: #F0F0F0;
     right: 20px;
     bottom: 20px;
@@ -814,16 +815,19 @@ li {
     }
 
     .logo_inner img {
-        width: 27rem;
+        width: 20rem;
     }
-
+    .image_middle {
+        width: 25rem;
+        height: 25rem;
+    }
 
 
     .info_inner_thicker {
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 400px;
         max-height: 200px;
     }
 
@@ -831,7 +835,7 @@ li {
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 400px;
         max-height: 150px;
     }
 
@@ -847,6 +851,8 @@ li {
     }
 
     .info .btn_row {
+        padding-left: 1rem;
+        margin-top: 5rem;
         height: 82px;
     }
 
@@ -884,10 +890,12 @@ li {
 
     .direction_inner h1 {
         text-align: center;
+        padding: 1rem;
     }
 
     .direction .btn_row {
-        margin: 20px 0 0 0;
+        margin: 5rem 0 0 1rem;
+        
         justify-content: space-evenly;
     }
 
@@ -913,14 +921,13 @@ li {
         min-width: 50%;
         margin-left: 0px;
 
-        margin-top: 50px;
+        margin-top: 8rem;
     }
 
     .news .news_inner_first_line .news_inner_element:first-child {
         min-width: 50%;
         margin-left: 0px;
-
-        margin-top: 0px;
+        margin-top: 1rem;
     }
 
     .news .news_inner_first_line .news_inner_element .text {
@@ -941,23 +948,13 @@ li {
     .news .news_inner_second_line .news_inner_second_line_element {
         border-top: 2px solid #000000;
         margin-left: 0px;
-        margin-top: 20px;
-        padding-top: 20px;
-    }
-
-
-    .news .news_inner_second_line .news_inner_second_line_element:first-child {
-        border-top: 2px solid #000000;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 5rem;
+        padding-top: 1rem;
     }
 
 
     .news .news_inner_second_line .news_inner_second_line_element:last-child {
-        border-top: 2px solid #000000;
-        margin-left: 0px;
-        margin-top: 0px;
+
         margin-bottom: 40px;
     }
 
@@ -1062,16 +1059,19 @@ li {
     }
 
     .about .about_inner .about_text {
-        padding: 70px;
+        padding: 2rem;
+        margin-top: 1rem;
     }
-
+    .about_text .btn_row {
+        width: 100%;
+    }
     .about_text .btn_row .how_to_join {
-        padding: 10px 30px;
+        padding: 10px 20px;
         font-size: 10px;
     }
 
     .about_text .btn_row .days {
-        padding: 10px 30px;
+        padding: 10px 20px;
         font-size: 10px;
     }
 
@@ -1119,6 +1119,10 @@ li {
     }
     .social_bar{
         margin-bottom: 50px;
+    }
+
+    .footer .logo_container .logo_white img{
+        width: 17rem;
     }
    
 }
