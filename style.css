@@ -866,6 +866,7 @@ li {
 
 .navigation.active {
     left: 0px;
+
 }
 
 .navigation ul {
@@ -881,7 +882,7 @@ li {
 }
 
 .navigation ul li a {
-    font-size: 1.7em;
+    font-size: 1em;
     color: black;
     text-decoration: none;
     font-weight: 300;
