@@ -21,13 +21,31 @@ window.addEventListener('click', (event) => {
 });
 
 
-function toggleMenu() {
+
+
+ 
   var menuToggle = document.querySelector('.menuToggle');
   var navigation = document.querySelector('.navigation');
+  var body = document.querySelector('body');
+
+menuToggle.addEventListener('click',() => {
+  
+
   menuToggle.classList.toggle('active');
   navigation.classList.toggle('active');
-  body.classList.toggle('active');
-}
+
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+  
+  if (body.style.overflow === 'hidden') {
+    // Если скролл заблокирован, то мы должны его разблокировать
+    body.style.overflow = 'auto';
+    body.style.paddingRight = '';
+  } else {
+    // Иначе мы блокируем прокрутку
+    body.style.overflow = 'hidden';
+    body.style.paddingRight = `${scrollBarWidth}px`;
+  }
+});
 
 
 let position = 0;
