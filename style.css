@@ -41,6 +41,34 @@ body {
     display: none;
 }
 
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    width: 60%;
+    margin: 30% auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  
+  .close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
 /* AppBar */
 
 .app_bar {
@@ -161,7 +189,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 48px 108px;
+    padding: 3rem 6rem;
 }
 
 
@@ -254,20 +282,23 @@ li {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    max-width: 800px;
+    max-height: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .info_inner_thiner {
+    display: none;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 800px;
-    height: 250px;
+    max-width: 800px;
+    max-height: 250px;
 }
 
 .info .info_inner_thicker p {
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 43px;
     color: #17181A;
@@ -289,7 +320,7 @@ li {
 }
 
 .how_to_join {
-    padding: 4px 52px;
+    padding: 4px 30px;
     background: #17181A;
     text-decoration: none;
     color: white;
@@ -302,14 +333,14 @@ li {
 }
 
 .days {
-    padding: 4px 52px;
+    padding: 4px 30px;
     background: #F0F0F0;
     text-decoration: none;
     color: black;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    margin: 0 20px;
+    margin: 0 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -322,7 +353,7 @@ li {
     background:
         #fff;
     border: 1px solid #ccc;
-    margin: 0 10px 10px 0;
+    margin-right: 5px;
     padding: 6px;
     color:
         #000;
@@ -368,13 +399,14 @@ li {
 
 /* Direction */
 
-.direction_inner {
-    margin: 160px 160px 0px 160px;
+.direction{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .direction h1 {
     font-weight: 400;
-    font-size: 57px;
+    font-size: 3rem;
     line-height: 60px;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -393,7 +425,7 @@ li {
 .direction .direction_inner ul li a {
     text-decoration: none;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.5rem;
     line-height: 36px;
 
     text-transform: uppercase;
@@ -425,7 +457,8 @@ li {
 
 
 .news {
-    margin: 70px 160px 20px 160px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .news h1 {
@@ -435,6 +468,7 @@ li {
     text-transform: uppercase;
     color: #17181A;
     margin-bottom: 45px;
+    margin-top: 30px;
 }
 
 .news .news_inner_first_line {
@@ -518,7 +552,7 @@ li {
 }
 
 .news .more {
-    padding: 5px 52px;
+    padding: 10px 52px;
     background-color: #000000;
     font-weight: 400;
     font-size: 11px;
@@ -528,7 +562,7 @@ li {
     text-transform: uppercase;
 
     color: #FFFFFF;
-
+    display: inline;
     margin-top: 20px;
 }
 
@@ -677,6 +711,22 @@ li {
 
 .about .about_inner .btn_row {
     margin-top: 40px;
+    display: inline;
+    height: 100px;
+    display: flex;
+}
+
+.about .about_inner .btn_row .days1 {
+    padding: 4px 52px;
+    background: #F0F0F0;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 10px;
 }
 
 /* ---------------------------------------------------- */
@@ -712,7 +762,11 @@ li {
     color: #000000;
     text-decoration: none;
 }
+.footer .logo_container .logo_button .button a {
+    color: black;
+    text-decoration: none;
 
+}
 .footer .logo_container .logo_button .block_text {
     font-weight: 400;
     font-size: 11px;
@@ -771,10 +825,131 @@ li {
     display: flex;
 }
 
+.menuToggle { 
+    display: none;
+    position: fixed;
+    top:0;
+    right:0;
+    width: 57px;
+    height: 57px;
+    background: orange url(assets/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.menuToggle.active {
+    background: rgb(255, 0, 0) url(assets/close.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
 
+.navigation { 
+    position: fixed;
+    top: 0;
+    left: calc(100%);
+    width: 100%;
+    height: 100%;
+    background:#fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.navigation.active { 
+    left: 0px;
+}
+.navigation ul { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation ul li { 
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation ul li a { 
+    font-size: 1.7em;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+    padding: 15px;
+    transition: 0.5;
+}
+.navigation ul li a:hover { 
+    color:orange
+}
+
+
+
+
+.socialBar img { 
+    transform: scale(1);
+    opacity: 0.7;
+    transition: 0.6s;
+}
+.socialBar img:hover { 
+    transform: scale(1.4);
+    opacity: 1;
+}
+.socialBar .email { 
+    position: absolute;
+    bottom: 20px;
+    transform: scale(0.6);
+}
+
+.socialBar ul { 
+    position: relative;
+
+}
+
+.socialBar ul li { 
+    position: relative;
+    text-decoration: none;
+}
+
+.socialBar ul li a { 
+    position: relative;
+    display: inline-block;
+    transform: scale(0.6);
+}
+
+
+.about { 
+    background-color: rgb(255, 253, 253);
+}
+.title { 
+    width: 100%;
+    text-align: center;
+    color: orange;
+    padding: 100px;
+}
 /* ---------------------------------------------------- */
 
 @media (max-width:667px) {
+
+    .wrapper {
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    
+    
+    .slider-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+ 
     .app_bar_inner{
         justify-content: space-between;
     }
@@ -801,13 +976,6 @@ li {
     }
 
 
-    .wrapper {
-        display: none;
-    }
-
-    .slider-buttons {
-        display: none;
-    }
 
     .logo_inner {
         margin: 50px;
@@ -815,42 +983,48 @@ li {
     }
 
     .logo_inner img {
-        width: 20rem;
+        width: 18rem;
     }
     .image_middle {
-        width: 25rem;
-        height: 25rem;
+        width: 20rem;
+        height: 20rem;
     }
 
 
     .info_inner_thicker {
+        padding-top: 10rem;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 300px;
         max-height: 200px;
+        text-align: justify;
     }
 
     .info_inner_thiner {
+        padding-top: 10rem;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 300px;
         max-height: 150px;
+        text-align: justify;
     }
 
     .info .info_inner_thicker p {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 
 
     .info .info_inner_thiner p {
-        font-size: 12px;
-        line-height: 20px;
+    
+        font-size: 1rem;
+        line-height: 30px;
     }
 
     .info .btn_row {
+        display: none;
         padding-left: 1rem;
         margin-top: 5rem;
         height: 82px;
@@ -877,20 +1051,22 @@ li {
         font-weight: 400;
         font-size: 8px;
         line-height: 15px;
-        margin: 0 10px;
         letter-spacing: 1px;
         text-transform: uppercase;
     }
 
 
-
+    .direction{
+        margin-top: 500px;
+    }
     .direction_inner {
-        margin: 30px 0 0 0;
+        margin: 100px 0 0 0;
     }
 
     .direction_inner h1 {
         text-align: center;
         padding: 1rem;
+        font-size: 2em;
     }
 
     .direction .btn_row {
@@ -913,15 +1089,13 @@ li {
     .news .news_inner_first_line {
         display: flex;
         flex-wrap: wrap;
-
-
     }
 
     .news .news_inner_first_line .news_inner_element {
         min-width: 50%;
         margin-left: 0px;
 
-        margin-top: 8rem;
+        margin-top: 16rem;
     }
 
     .news .news_inner_first_line .news_inner_element:first-child {
@@ -933,7 +1107,7 @@ li {
     .news .news_inner_first_line .news_inner_element .text {
         width: fit-content;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 18px;
         color: #17181A;
 
@@ -942,7 +1116,7 @@ li {
     .news .news_inner_second_line {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 0px;
+ 
     }
 
     .news .news_inner_second_line .news_inner_second_line_element {
@@ -952,18 +1126,14 @@ li {
         padding-top: 1rem;
     }
 
-
-    .news .news_inner_second_line .news_inner_second_line_element:last-child {
-
-        margin-bottom: 40px;
-    }
+    
 
     .news .news_inner_second_line .news_inner_second_line_element p {
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
         color: #17181A;
-
+        text-align: justify;
         padding-top: 20px;
     }
 
@@ -973,6 +1143,7 @@ li {
         line-height: 18px;
         color: #17181A;
 
+        text-align: justify;
         padding-top: 20px;
     }
 
@@ -992,11 +1163,14 @@ li {
         flex-wrap: wrap;
     }
 
+
+
     .source .source_inner_first_line .source_inner_first_line_element {
         min-width: 100%;
-        margin-bottom: 60px;
-        padding: 0;
+        padding-left: 0;
+        margin-bottom: 12rem;
     }
+    
 
     .source .source_inner_first_line .source_inner_first_line_element:first-child {
         min-width: 100%;
@@ -1008,16 +1182,19 @@ li {
         line-height: 18px;
 
         color: #17181A;
+        text-align: justify;
     }
 
     .source .more {
-        margin-top: 10px;
         padding: 20px 50px;
         background-color: #000000;
         color: white;
-        display: inline-block;
+        margin: 0;
     }
-
+    
+    .news .more{
+        display: block;
+    }
 
     .about {
         margin: 0;
@@ -1025,7 +1202,7 @@ li {
 
     .about .about_inner .about_header h1 {
         font-weight: 400;
-        font-size: 50px;
+        font-size: 3rem;
         line-height: 40px;
         text-align: center;
         text-transform: uppercase;
@@ -1062,18 +1239,27 @@ li {
         padding: 2rem;
         margin-top: 1rem;
     }
-    .about_text .btn_row {
-        width: 100%;
+ 
+    .about_text .btn_row{
+        display: block;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100px;
+        margin-left: 0px;
     }
     .about_text .btn_row .how_to_join {
         padding: 10px 20px;
         font-size: 10px;
     }
 
-    .about_text .btn_row .days {
+    .about .about_inner .btn_row .days1 {
+        
         padding: 10px 20px;
         font-size: 10px;
+        margin-left: 0px;
     }
+
+    
 
 
 
@@ -1106,13 +1292,20 @@ li {
     }
 
 .contact_box_inner{
+   
     width: 100%;
 }
     .numbers {
         display: flex;
         justify-content: space-between;
+        font-size: 0.6rem;
     }
 
+
+    .numbers .email_box{
+        width: 150px;
+        text-align: right;
+    }
     .social{
         display: flex;
         flex-direction: column-reverse;
@@ -1124,5 +1317,23 @@ li {
     .footer .logo_container .logo_white img{
         width: 17rem;
     }
-   
+    .numbers_text {
+        padding-right: 70px;
+        padding-bottom: 30px;
+    }
+
+
+    .menuToggle { 
+        display:  block;
+       
+    }
+
+    .call_back{
+        display: none;
+    }
+    .navigation_bar{
+        display: none;
+    }
+
+    
 }

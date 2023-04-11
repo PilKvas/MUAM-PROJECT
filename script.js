@@ -1,3 +1,34 @@
+
+
+// Модальное окно для кнопки Eще //
+
+const openModal = document.getElementById('open-modal');
+const modal = document.getElementById('modal');
+const close = document.getElementsByClassName('close')[0];
+
+openModal.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+close.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+
+function toggleMenu() {
+  var menuToggle = document.querySelector('.menuToggle');
+  var navigation = document.querySelector('.navigation');
+  menuToggle.classList.toggle('active');
+  navigation.classList.toggle('active')
+}
+
+
 let position = 0;
 const slidesToShow = 3;
 const slidesToScroll = 1;
