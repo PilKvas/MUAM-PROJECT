@@ -758,10 +758,12 @@ li {
 }
 
 .footer .logo_container .logo_button .button {
-    padding: 20px 100px;
+    padding: 20px 0;
     background-color: #FFFFFF;
     color: #000000;
     text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
 }
 
 .footer .logo_container .logo_button .button a {
@@ -1334,5 +1336,6 @@ li {
         display: none;
     }
 
+    
 
 }
