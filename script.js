@@ -20,10 +20,33 @@ window.addEventListener('click', (event) => {
   }
 });
 
+const button1 = document.querySelector('#my-button1');
+const list1 = document.querySelector('#my-list1');
+
+button1.addEventListener('click', () => {
+  if (list1.style.display === 'none') {
+    // Если список скрыт, то показываем его
+    list1.style.display = 'block';
+  } else {
+    // Иначе скрываем его
+    list1.style.display = 'none';
+  }
+});
 
 
+const button2 = document.querySelector('#my-button2');
+const list2 = document.querySelector('#my-list2');
 
- 
+button2.addEventListener('click', () => {
+  if (list2.style.display === 'none') {
+    // Если список скрыт, то показываем его
+    list2.style.display = 'block';
+  } else {
+    // Иначе скрываем его
+    list2.style.display = 'none';
+  }
+});
+
   var menuToggle = document.querySelector('.menuToggle');
   var navigation = document.querySelector('.navigation');
   var body = document.querySelector('body');
