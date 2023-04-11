@@ -862,6 +862,7 @@ li {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+
 }
 
 .navigation.active {
@@ -882,12 +883,12 @@ li {
 }
 
 .navigation ul li a {
-    font-size: 1em;
+    font-size: 0.9em;
     color: black;
     text-decoration: none;
     font-weight: 300;
+    margin: 7px 0px;
     display: inline-block;
-    padding: 10px;
     transition: 0.5;
 }
 
@@ -912,6 +913,15 @@ li {
 /* ---------------------------------------------------- */
 
 @media (max-width:667px) {
+
+
+    .app_bar{
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 100;
+        background-color: white;
+    }
 
     .wrapper {
         width: 300px;
