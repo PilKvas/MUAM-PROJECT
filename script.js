@@ -24,12 +24,13 @@ const button1 = document.querySelector('#my-button1');
 const list1 = document.querySelector('#my-list1');
 
 button1.addEventListener('click', () => {
-  if (list1.style.display === 'none') {
+  if (list1.style.display === 'block') {
     // Если список скрыт, то показываем его
-    list1.style.display = 'block';
+    list1.style.display = 'none';
   } else {
     // Иначе скрываем его
-    list1.style.display = 'none';
+    list1.style.display = 'block';
+    button1.style.display = "none";
   }
 });
 
@@ -40,10 +41,12 @@ const list2 = document.querySelector('#my-list2');
 button2.addEventListener('click', () => {
   if (list2.style.display === 'none') {
     // Если список скрыт, то показываем его
-    list2.style.display = 'block';
+    list2.style.display = 'none';
   } else {
     // Иначе скрываем его
     list2.style.display = 'none';
+    list2.style.display = 'block';
+    button2.style.display = "none";
   }
 });
 

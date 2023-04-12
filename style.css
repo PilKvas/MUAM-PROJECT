@@ -739,6 +739,8 @@ li {
     margin-left: 10px;
 }
 
+
+
 /* ---------------------------------------------------- */
 
 
@@ -815,6 +817,7 @@ li {
 .numbers_box {
     padding: 20px 0;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
+    display: none;
 }
 
 .email_number_header{
@@ -826,6 +829,10 @@ li {
     border: 2px solid white;
 }
 
+.email_number_header img{
+    width: 60px;
+    height: 40px;
+}
 
 .numbers {
     display: flex;
