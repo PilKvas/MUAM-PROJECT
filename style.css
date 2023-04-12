@@ -1383,4 +1383,10 @@ li {
     color: #FFFFFF;
 
 }
+
+
+.email_number_header img{
+    width: 40px;
+    height: 30px;
+}
 }
