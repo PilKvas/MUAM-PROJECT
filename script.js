@@ -27,10 +27,11 @@ button1.addEventListener('click', () => {
   if (list1.style.display === 'block') {
     // Если список скрыт, то показываем его
     list1.style.display = 'none';
+    button1.style.transform = 'rotateX(360deg)';
   } else {
     // Иначе скрываем его
     list1.style.display = 'block';
-    button1.style.display = "none";
+    button1.style.transform = 'rotateX(180deg)';
   }
 });
 
@@ -39,14 +40,14 @@ const button2 = document.querySelector('#my-button2');
 const list2 = document.querySelector('#my-list2');
 
 button2.addEventListener('click', () => {
-  if (list2.style.display === 'none') {
+  if (list2.style.display === 'block') {
     // Если список скрыт, то показываем его
     list2.style.display = 'none';
+    button2.style.transform = 'rotateX(360deg)';
   } else {
     // Иначе скрываем его
-    list2.style.display = 'none';
     list2.style.display = 'block';
-    button2.style.display = "none";
+    button2.style.transform = 'rotateX(180deg)';
   }
 });
 
